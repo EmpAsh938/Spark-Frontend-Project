@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buy-btn {
+    background: linear-gradient(90deg, #F3705B 0%, #FCB444 100%);
+}
+
+.active-head {
+    @apply bg-[#003f5c] text-white before:absolute before:bottom-[-10%] before:w-0 before:h-0 
+   before:border-l-[8px] before:border-l-transparent
+   before:border-t-[16px] before:border-t-[#003f5c]
+   before:border-r-[8px] before:border-r-transparent
+}
+
+.active-head > span {
+    @apply text-white;
+}
+
+.communication {
+    @apply bg-[#edfcff];
+}
+
+
+
+.visual {
+    @apply bg-[#dcccff];
+}
+
+.music {
+    @apply bg-[#ffedc8];
+}
+
+
+.card:hover {
+    @apply translate-y-[-4%];
+}
+
+.card:hover .card-flyer, .card:hover .card-flyer > span {
+    @apply bg-[#d5f1fe] text-[#333333];
+}
+
+.card:hover .card-head {
+    @apply bg-[#003f5c];
+}
+
+.card:hover .card-text {
+    @apply text-white;
+}
+
+.card:hover .card-triangle {
+    @apply border-r-[#003f5c];
+}
